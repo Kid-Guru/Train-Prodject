@@ -1,0 +1,365 @@
+/*Общие стили*/
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    border:0;
+}
+/* текст оформление */
+body {
+    font: 16px/1.56 "Roboto", sans-serif;
+    color: #252525;
+}
+ 
+.point::after {
+    content:".";
+    color: #3333ff;
+}
+
+.opacity, p, h3>span {
+    opacity: 0.8;
+}
+
+span {
+    font-weight: normal;
+    padding-left: 10px;
+    font: 16px/1.56 "Roboto", sans-serif;
+}
+
+h1 {
+    font: 700 36px/1.25 "Lato", sans-serif;
+}
+
+h2 {
+    font: bold 30px/1.4 "Lato", sans-serif;
+    margin-bottom: 1px;
+}
+
+h3 {
+    font: bold 18px/1.56 "Lato", sans-serif;
+    margin-bottom: 1px; /*1px*/
+}
+
+/* расположение */
+.container{
+    display:flex;
+    justify-content:space-between;
+}
+
+.positioner {
+    width:1170px; 
+    margin: 0px auto;
+}
+
+.column-1 {
+    width: 370px;
+}
+
+.column-2 {
+    width: 770px;
+}
+
+.flex-wrap {
+    flex-wrap:wrap;
+}
+
+/* .border {
+    border: 2px black solid;
+    background-color: aquamarine;
+} */
+
+section {
+    border-bottom: 1px solid #e3e3e3;
+    padding:40px 0;
+}
+
+.button {
+    width: 170px;
+    padding:15px 0;
+    font: 700 12px/1.66 "Lato", sans-serif;
+    text-transform: uppercase;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button, 
+.button:active, 
+.button:focus {
+    outline: none;
+}
+
+.button.wht {
+    background-color:#efefef;
+    color: black;
+}
+
+.button.wht:active {
+    background-color: darkgray;
+}
+
+.button.blue {
+    color:#efefef;
+    background-color: #3333ff;
+    margin-right: 30px;
+}
+
+/*Оформление Header*/
+header {
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.header.container {
+    height: 83px;
+    padding: 20px 0 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font: bold 24px/1.56 "Lato", sans-serif;
+}
+
+nav {
+    /* margin-left: 500px;
+    display:flex;
+    justify-content:space-between;
+    width: 625px;  */
+    margin-top: 8px;
+}
+
+nav a {
+    font: 700 12px/1.66 "Lato", sans-serif;
+    color:rgb(37, 37, 37);
+    text-decoration: none;
+    width: auto;
+    margin-left: 30px;
+}
+
+nav a:focus,
+nav a:active,
+nav a:hover {
+    text-decoration: underline;
+    color: #3333ff;
+}
+
+.social-links a {
+    color:rgb(37, 37, 37);
+    text-decoration: none;
+}
+
+.social-links a:focus,
+.social-links a:active,
+.social-links a:hover {
+    color: #3333ff;
+}
+
+.social-links span {
+    font-size: 14px;
+    line-height: inherit;
+    padding: 0 20px 0 0;
+}
+
+/*Оформление главной полосы*/
+.about-me {
+    padding: 36px 0  39px 0;
+}
+
+.my-photo {
+    width: 570px;
+    height: 320.33px;
+    object-fit: cover;
+}
+
+.about-me-text {
+    width:600px;
+}
+
+.about-me-text-header {
+    margin-bottom: 2px;
+}
+
+.about-me-text-info {
+    margin-bottom: 20px;
+}
+
+.about-me-text-contacts {
+    width: 570px;
+    height: 106.365px;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-bottom: 30px;
+}
+
+.col-1 {
+    font: 700 12px/1.66 "Lato", sans-serif;
+    text-transform: uppercase;
+    width: 90px;
+}
+
+.col-2 {
+    font: 14px/1.4 "Roboto", sans-serif;
+    width: 480px;
+}
+
+/*Оформление скилс*/
+.skills>.container {
+    height: 100%;
+}
+
+.column-2-1,
+.column-2-2 {
+    width: 48%;
+    flex-direction: column;
+    height: 100%;
+}
+
+.skills-text-container {
+    min-height: 102px;
+}
+
+/*ОПЫТ*/
+.text-descr {
+    margin-top: 10px; /*10*/
+    font-style: italic;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+/* portfolio */
+li {
+    list-style: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font: 700 12px/1.66 "Lato", sans-serif;
+    padding-right: 31px;
+    padding-top: 19px;
+}
+
+.portfolio-exaples {
+    width: 100%;
+    margin-top: 19px
+}
+
+.portfolio-exaples-block {
+    width: 270px;
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.portfolio-exaples::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* .portfolio-exaples-block a {  
+ padding: 0px;
+} */
+
+.portfolio-exaples-link {
+    width: 100%;
+    text-align: left;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.portfolio-exaples-block:nth-child(4n) {
+    margin-right: 0px;
+}
+
+.portfolio-exaples-block:nth-child(n+5) {
+    margin-bottom: 0px;
+}
+
+.portfolio-exaples-link-name {
+    display: inline-block;
+    font: bold 18px/1.56 "Lato", sans-serif;
+    color:black;
+    /* opacity: 1.0; */
+    padding-left: 0px;
+    margin-top: 5px;
+    margin-bottom: 2px;
+}
+
+.portfolio-exaples-link-date {
+    padding-left: 0px;
+    color: #252525;
+    opacity: 0.8;
+}
+
+/* feedback */
+.feedback-photo {
+    height: 50px;
+    width: 50px;
+    border-radius: 3px;
+    margin-right: 20px;
+}
+
+.feedback-row {
+    display: flex;
+}
+
+.contact {
+    padding:40px 0;
+}
+
+.form-wrapper-col-2-2 a {   
+    display: block;
+    margin: 23px 0px 0px auto;
+}
+
+.form-wrapper-col-2-1 {
+    width: 270px;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.form-wrapper-col-2-2 {
+    width: 470px;
+}
+
+input:first-child {
+    margin-bottom: 30px;
+}
+
+input {
+    height: 50px;
+    padding: 0 20px ;
+}
+
+textarea {
+    width: 100%;
+    height: 130px;
+    padding: 15px 20px;
+    resize: none;
+}
+
+.form-style {
+    border: 1px solid #eee;
+    border-radius: 2px;
+    font-size: 14px;
+    font-family: "Lato", sans-serif;
+    line-height: 1.4;
+    opacity: 0.8;
+}
+
+.form-style:hover
+.form-style:focus {
+    outline-color: #3333ff;
+    opacity: 1.0;
+}
+
+footer {
+    background-color:#efefef;
+    padding: 15px 0;
+    font: 14px/1.4 "Roboto", sans-serif;
+    color:#252525;
+    text-align: center;
+}
